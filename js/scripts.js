@@ -45,4 +45,7 @@ function displayWeather(data) {
 
   let temperature = document.querySelector("#weather-temp");
   temperature.textContent = data.main.temp + "\u00b0";
+
+  let description = document.querySelector("#weather-description");
+  description.textContent = data.weather[0].main;
 }
